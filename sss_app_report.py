@@ -34,7 +34,9 @@ try:
     # --- HEADER ---
     st.title("Dashboard Performa Aplikasi")
     st.subheader("Suwondo Sigit Solution")
-    st.markdown(f"**Update terakhir:** {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M')}")
+    timezone = pytz.timezone("Asia/Jakarta")
+    now_jakarta = pd.Timestamp.now(tz=timezone)
+    st.markdown(f"**Update terakhir:** {now_jakarta.strftime('%Y-%m-%d %H:%M')} WIB")
 
     # --- SIDEBAR ---
     st.sidebar.header("Filter Laporan")
