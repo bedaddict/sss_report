@@ -93,7 +93,7 @@ try:
             st.plotly_chart(fig_conv, use_container_width=True)
 
         # --- TABEL DETAIL ---
-        st.write("### 📋 Detail Laporan (Rank 1 = Install Terbanyak)")
+        st.write("### Detail Laporan (Rank 1 = Install Terbanyak)")
         # Menampilkan kolom sesuai urutan yang kamu mau
         display_cols = ['Rank', 'Application', 'Install', 'Conversion_Rate', 'DAU']
         st.dataframe(
